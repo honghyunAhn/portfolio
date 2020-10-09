@@ -14,19 +14,24 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav id="navbar"></nav>
+    <nav id="navbar">
         <div class="navbar__logo">
             <img src="imgs/fav_down.png" alt="favicon">
             <a href="#">アンホンヒョン</a>
         </div>
         <ul class="navbar__menu">
-            <li class="navbar_menu_item">Home</li>
-            <li class="navbar_menu_item">About</li>
-            <li class="navbar_menu_item">Skills</li>
-            <li class="navbar_menu_item">My work</li>
-            <li class="navbar_menu_item">Testimonials</li>
-            <li class="navbar_menu_item">Contact</li>
+            <li class="navbar_menu_item" data-link="#home">Home</li>
+            <li class="navbar_menu_item" data-link="#about">About</li>
+            <li class="navbar_menu_item" data-link="#skills">Skills</li>
+            <li class="navbar_menu_item" data-link="#work">My work</li>
+            <li class="navbar_menu_item" data-link="#testimonials">Testimonials</li>
+            <li class="navbar_menu_item" data-link="#contact">Contact</li>
         </ul>
+    <!-- Toggle button -->
+    <button class="navbar__toggle-btn">
+        <i class="fas fa-bars"></i>
+    </button>
+    </nav>
 
     <!-- Home -->
     <section id="home">
@@ -104,12 +109,57 @@
             <div class="skillset__left">
                 <h3 class="skillset__tilte">Skills</h3>
                 <div class="skill">
-                    <div class="skill_description">
+                    <div class="skill__description">
                         <span>HTML</span>
                         <span>99%</span>
                     </div>
-                    <div class="sill__bar">
-                        <div class="skill__value"></div>
+                    <div class="skill__bar">
+                        <div class="skill__value" style="width: 99%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill__description">
+                        <span>CSS</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__value" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill__description">
+                        <span>JavaScript</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__value" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill__description">
+                        <span>C</span>
+                        <span>50%</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__value" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill__description">
+                        <span>JAVA</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__value" style="width: 88%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill__description">
+                        <span>SQL</span>
+                        <span>70%</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__value" style="width: 77%;"></div>
                     </div>
                 </div>
             </div>
@@ -307,13 +357,15 @@
         <h2 class="contact__email">anh2073@gmail.com</h2>
         <div class="contact__links">
             <a href="https://github.com/honghyunAhn" target="_blank">
-                <i class="fab fa_github"></i>
-            </a>
-            <a href="#" target="_blank">
-                <i class="fab fa_linkedin-square"></i>
+                <i class="fab fa-github"></i>
             </a>
         </div>
-        <p class="contact__rights">2020 AHH - All roghts reserved</p>
+        <p class="contact__rights">2020 AHH - All rights reserved</p>
     </section> 
+
+    <!-- Arrow up -->
+    <button class="arrow-up">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 </body>
 </html>
