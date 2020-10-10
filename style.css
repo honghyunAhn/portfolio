@@ -406,3 +406,17 @@ p {
   margin-top: 8px;
   background-color: var(--color-dark-white);
 }
+
+/* Testimonial */
+#testimonials {
+  background-color: var(--color-light-white);
+}
+
+.testimonials {
+  margin: 40px;
+}
+
+.testimonial {
+  display: flex;
+  margin: 32px 0;
+}
