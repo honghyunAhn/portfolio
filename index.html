@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AHH's Portfolio</title>
-    <meta name="description" content="Portfolio for world-renownd software engineer AHH">
-    <meta name="author" content="Ahn honghyun">
-    <link rel="icon" type = "image/png" href="imgs/favicon.png">
-    <script src="https://kit.fontawesome.com/2bf7f5bc5e.js" crossorigin="anonymous"></script>
-    <link href = "https://fonts.googleapis.com/css2? family = Open + Sans : wght @ 400; 600; 700 & display = swap"rel = "stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script src="main.js" defer></script>
-</head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>AHH's Portfolio</title>
+        <meta
+            name="description"
+            content="Portfolio for world-renowned software engineer Ahn honghyun"
+        />
+        <meta name="author" content="AHH" />
+        <link rel="icon" type="image/png" href="imgs/favicon.png" />
+        <script
+            src="https://kit.fontawesome.com/9eb162ac0d.js"
+            crossorigin="anonymous"
+        ></script>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
 <body>
     <!-- Navbar -->
     <nav id="navbar">
@@ -40,61 +48,70 @@
     </section>
 
     <!-- About -->
-    <section id="about">
+    <section id="about" class="section">
         <h1>About me</h1>
-        <p>私はITを 専攻し、大学の研究室で様々なプロジェクトをしたためコーディングのセンスが いいと周りの人に言われます。
-            そして、几帳面な性格なのでコーディングする時 エラーが 少ないです。また、私の 強みは コーディングを 楽しむことです。
-            大学時代には、大学に役に立つレンタル サイクルのアプリケーションや、外国人 留学生の ための ウェブサイトを 作り、奨学金を もらいました。
-            このような経験と強みを貴社で 生かしたいです。
+        <p>
+            私はITを 専攻し、大学の研究室で様々なプロジェクトをしたためコーディングのセンスが いいと周りの人に言われます。</br>
+            そして、几帳面な性格なのでコーディングする時 エラーが 少ないです。また、私の 強みは コーディングを 楽しむことです。</br>
+            大学時代には、大学に役に立つレンタル サイクルのアプリケーションや、外国人 留学生の ための ウェブサイトを 作り、</br>
+            奨学金を もらいました。このような経験と強みを貴社で 生かしたいです。
         </p>
         <div class="about__majors">
             <div class="major">
                 <div class="major__icon">
-                    <img src="imgs/major/swimmer.png" alt="swim">
+                    <i class="fa fa-swimmer"></i>
                 </div>
-                <div class="major_title">運動、体力</div>
-                <div class="major_description">
-                    小学生の時から水泳を習いました。<br/>
-                    水泳で鍛えられたため体力がつき健康なので生活するうえで大きく役立っています。
-                </div>
-            </div>
-            <div class="major">
-                <div class="major__icon">
-                    <img src="imgs/major/help.png" alt="help">
-                </div>
-                <div class="major_title">コミュニケーション</div>
-                <div class="major_description">
-                    サークルでボランティア活動をしました。<br/>
-                    ボランティアの経験を通じてコミュニケーション能力を身につけました。
+                <h2 class="major__title">運動、体力</h2>
+                <div class="major__description">
+                    小学生の時から水泳を習いました。</br>
+                    水泳で鍛えられたため体力がつき</br>
+                    健康なので生活するうえで大きく</br>
+                    役立っています。
                 </div>
             </div>
             <div class="major">
                 <div class="major__icon">
-                    <img src="imgs/major/book.png" alt="book">
+                    <i class="fa fa-hands-helping"></i>
                 </div>
-                <div class="major_title">勤勉、誠実</div>
-                <div class="major_description">
-                    立てた目標は最後までやりとおす性格です。<br/>
-                    毎晩11時までセンターに残って勉強し、週末にもセンターに出て勉強しました。 
+                <h2 class="major__title">コミュニケーション</h2>
+                <div class="major__description">
+                    サークルでボランティア活動をしました。</br>
+                    ボランティアの経験を通じて</br>
+                    コミュニケーション能力を身につけました。</br>
+                </div>
+            </div>
+            <div class="major">
+                <div class="major__icon">
+                    <i class="fa fa-book"></i>
+                </div>
+                <h2 class="major__title">勤勉、誠実</h2>
+                <div class="major__description">
+                    立てた目標は最後までやりとおす性格です。</br>
+                    毎晩11時までセンターに残って勉強し、</br>
+                    週末にもセンターに出て勉強しました。
                 </div>
             </div>
         </div>
         <div class="about__jobs">
             <div class="job">
                 <img src="imgs/jobs/daegu.png" alt="daegu" class="job__logo">
-                <p class="job__name">大邱大学</p>
-                <p class="job__period">2007.3.2~2015.2.15</p>
+                <div class="job__discription">
+                    <p class="job__name">大邱大学</p>
+                    <p class="job__period">2007.3.2~2015.2.15</p>
+                </div>
             </div>
             <div class="job">
                 <img src="imgs/jobs/scit.png" alt="scit" class="job__logo">
-                <p class="job__name">KITA-SES(韓国貿易協会 -Soft Engineer Society)</p>
-                <p class="job__period">2019.9.30~2020.7.24</p>
+                <div class="job__discription">
+                    <p class="job__name">KITA-SES(韓国貿易協会 -Soft Engineer Society)</p>
+                    <p class="job__period">2019.9.30~2020.7.24</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Skill -->
-    <section id="skill">
+    <section id="skill class="section">
         <h1>Skills</h1>
         <h2>Skills & Atrribute</h2>
         <p>
@@ -185,7 +202,7 @@
     </section>
 
     <!-- Work -->
-    <section id="work"> 
+    <section id="work" class="section"> 
         <h1>MY work</h1>
         <h3>Project</h3>
         <div class="work__categories">
@@ -344,13 +361,13 @@
     </section>
 
     <!-- Testimonials -->
-    <section id="testimonials">
+    <section id="testimonials" class="section">
         <h1>Testimonials</h1>
         <h3>See what they say about me</h3>
     </section>
 
     <!-- Contact -->
-    <section id="contact">
+    <section id="contact" class="section">
         <h1 class="contact__title">Let's talk</h1>
         <h2 class="contact__email">anh2073@gmail.com</h2>
         <div class="contact__links">
