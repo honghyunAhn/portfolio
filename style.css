@@ -66,6 +66,7 @@ button {
   cursor: pointer;
   border: none;
   outline: none;
+  padding: 0;
 }
 /* Typography */
 
@@ -441,7 +442,7 @@ p {
   background-color: var(--color-dark-white);
 }
 
-/* Testimonial */
+/* Licenses */
 #licenses {
   background-color: var(--color-light-white);
 }
@@ -529,6 +530,9 @@ p {
   }
   .navbar__toggle-btn {
     display: block;
+    top: 16px;
+    right: 16px;
+    font-size: var(--font-medium);
   }
 
   #navbar {
@@ -554,6 +558,7 @@ p {
 
   .section {
     padding: 16px;
+    padding-top: 40px;
   }
 
   .about__majors {
@@ -581,5 +586,14 @@ p {
   .testimonial__speech-bubble {
     padding: 100px;
     text-align: center;
+  }
+
+  .arrow-up {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+    right: 16px;
+    bottom: 16px;
   }
 }
