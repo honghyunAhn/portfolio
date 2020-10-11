@@ -68,8 +68,8 @@ button {
   outline: none;
   padding: 0;
 }
-/* Typography */
 
+/* Typography */
 h1 {
   font-size: var(--font-large);
   font-weight: var(--weight-bold);
