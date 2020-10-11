@@ -146,6 +146,7 @@ p {
   right: 32px;
   font-size: 24px;
   color: var(--color-white);
+  margin-top: 18px;
   display: none;
 }
 
