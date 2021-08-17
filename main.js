@@ -1,5 +1,22 @@
 'use strict';
 
+
+
+const lang_select = document.querySelector('#lang_select');
+const jap = document.querySelector('#jap');
+const kor = document.querySelector('#kor');
+const HIDDEN_CLASSNAME = "hidden";
+document.addEventListener('change', () => {
+    if(lang_select.value == 0){
+        kor.classList.add(HIDDEN_CLASSNAME);
+        jap.classList.remove(HIDDEN_CLASSNAME);
+
+    } else if(lang_select.value == 1){
+        kor.classList.remove(HIDDEN_CLASSNAME);
+        jap.classList.add(HIDDEN_CLASSNAME);
+    }
+});
+
 // Make navbar transparent when it is on the top
 const navbar = document.querySelector('#navbar');
 const navbarHeight = navbar.getBoundingClientRect().height;

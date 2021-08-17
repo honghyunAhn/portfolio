@@ -135,6 +135,24 @@ p {
   border-radius: var(--size-border-radius);
 }
 
+.navbar_menu_li {
+  padding: 7px 12px;
+  margin: 0 4px;
+}
+
+.navbar_menu_select {
+  font-size: var(--font-small);
+  font-family: inherit;
+  cursor: pointer;
+  border: 1px solid transparent;
+  color: var(--color-white);
+  background-color: transparent;
+}
+
+.navbar_menu_option {
+  background-color: var(--color-blue);
+}
+
 .navbar_menu_item:hover {
   border-color: var(--color-white);
   background-color: var(--color-dark-blue);
@@ -517,6 +535,10 @@ p {
 .arrow-up.visible {
   opacity: 1;
   pointer-events: auto;
+}
+
+.hidden {
+  display: none;
 }
 
 /* For below 768px screen width */
