@@ -1,6 +1,7 @@
 # portfolio
 **: CSS,HTML,JavaScriptで反応型のポートフォリオのウェブサイトをつくりました。**
-#### url : https://honghyunahn.github.io/portfolio/
+#### url : [portfolio](]https://honghyunahn.github.io/portfolio/)
+#### Notion : [portfolio Notion 筆記](https://anh288.notion.site/THEORY-d220f1dd145649e5b16b6c87e460e928)
 <br>
 <br>
 # Tech/framework used
