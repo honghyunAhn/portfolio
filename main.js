@@ -9,9 +9,17 @@ const HIDDEN_CLASSNAME = "hidden";
 // Calculation of the number of years
 window.onload = function () {
   const now = new Date().getFullYear();
+
   const setYear = new Date("2018").getFullYear();
   const years = now - setYear;
-  document.getElementById("years").innerHTML = years;
+  const yearList = document.getElementsByClassName("years");
+  for (var i = 0; i < yearList.length; i++) {
+    yearList[i].innerHTML = years;
+  }
+
+  const setJavaYear = new Date("2020").getFullYear();
+  const javaYear = now - setJavaYear;
+  document.getElementById("javaYear").innerHTML = javaYear;
 };
 
 document.addEventListener("change", () => {
