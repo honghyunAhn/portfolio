@@ -19,6 +19,27 @@ window.onload = function () {
   for (var i = 0; i < javaYearList.length; i++) {
     javaYearList[i].innerHTML = javaYears;
   }
+
+  // Count Work filter
+  const categoryBtn = document.getElementsByClassName("category__btn");
+  for (var i = 0; i < categoryBtn.length; i++) {
+    const filter = categoryBtn[i].dataset.filter;
+    if (filter == "*") {
+      const fullNum = document.getElementsByClassName("project").length;
+      categoryBtn[i].lastChild.innerHTML = fullNum;
+    } else {
+      const projectType = document.getElementsByClassName("project");
+      var cnt = 0;
+      for (var j = 0; j < projectType.length; j++) {
+        if (filter == projectType[j].dataset.type) {
+          cnt++;
+        }
+      }
+      document.querySelector(
+        "button[data-filter=" + filter + "]"
+      ).lastChild.innerHTML = cnt;
+    }
+  }
 };
 
 // Make navbar transparent when it is on the top
