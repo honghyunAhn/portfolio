@@ -20,6 +20,18 @@ window.onload = function () {
     javaYearList[i].innerHTML = javaYears;
   }
 
+  // Skill Percent
+  const skillDescription =
+    document.getElementsByClassName("skill__description");
+  for (var i = 1; i < skillDescription.length; i++) {
+    const skillYear = skillDescription[i]
+      .querySelector("span:last-child")
+      .innerHTML.charAt(0);
+    const skillPercent = Math.floor((skillYear / javaYears) * 100);
+    skillDescription[i].nextElementSibling.querySelector("div").style.width =
+      skillPercent + "%";
+  }
+
   // Count Work filter
   const categoryBtn = document.getElementsByClassName("category__btn");
   for (var i = 0; i < categoryBtn.length; i++) {
