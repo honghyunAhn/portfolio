@@ -36,11 +36,10 @@ window.onload = function () {
   const categoryBtn = document.getElementsByClassName("category__btn");
   for (var i = 0; i < categoryBtn.length; i++) {
     const filter = categoryBtn[i].dataset.filter;
+    const projectType = document.getElementsByClassName("project");
     if (filter == "*") {
-      const fullNum = document.getElementsByClassName("project").length;
-      categoryBtn[i].lastChild.innerHTML = fullNum;
+      categoryBtn[i].lastChild.innerHTML = projectType.length;
     } else {
-      const projectType = document.getElementsByClassName("project");
       var cnt = 0;
       for (var j = 0; j < projectType.length; j++) {
         if (filter == projectType[j].dataset.type) {
